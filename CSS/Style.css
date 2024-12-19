@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+*
+{
+  box-sizing:border-box ;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  color:rgb(255, 255, 255);
+}
+
+body
+{
+  box-sizing:border-box ;
+  font-family: "Montserrat", Thin 100 ;
+  font-weight: 300;
+  background-color:rgb(170, 192, 255);
+} 
+.navigation {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-btn
+ {
+  width:150px;
+  height: 45px;
+  background-color:#ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+.login-btn:hover 
+{
+  background-color: #808080;
+}
+
+.reg-btn
+ {
+  margin-top: 15px;
+  width:150px;
+  height: 45px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 20px;
+}
+.reg-btn:hover 
+{
+  background-color: #808080;
+}
+
+.wraper h1
+{
+  margin-top: 25px;
+  font-family: "Montserrat", Thin 100;
+  font-weight: 300;
+  text-align:start;
+  color:white;
+}
+
+.wraper h1 a
+{
+    text-decoration: none;
+    color:rgb(170, 192, 255);
+    font-weight: 400;
+   
+}
+
+.wraper h1 a:hover
+{
+   text-decoration: underline;
+}
+
+.wraper
+{   position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 448px;
+    height: 425px;
+    padding: 0 35px 0 35px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    color:white;
+    font-weight: 300;
+    display: none; 
+    margin-bottom: 25px;
+    
+}
+.wraper .names
+{
+  font-weight: 300;
+   width:100%;
+   height:50px;
+   margin: 10px;
+   color:white;
+   margin-bottom: 55px;
+
+}
+.wraper .input-box
+{
+   
+   width:100%;
+   height:50px;
+   margin: 10px;
+   color:white;
+}
+
+.input-box input 
+{
+    width: 346px;
+    height:43px;
+    background: transparent;
+    border:none;
+    outline:none;
+    background-color:white;
+    border-radius: 40px;
+    font-size: 14px;
+    color:rgb(54, 54, 54);
+    padding:20px 45px 20px 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+.input-box input::placeholder
+{
+ color:rgba(57, 57, 57, 0.553);
+}
+
+input[type="radio"] 
+{
+  accent-color: rgb(170, 192, 255);
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  margin: 10px;
+  border:none;
+
+}
+
+.remember label input
+{
+  display: flex;
+  height:50px;
+  margin: 10px;
+  accent-color:#fff;
+  
+}
+
+.remember a
+{ 
+    color:aliceblue;
+    text-decoration: none;
+    margin-top: 7px;
+}
+.remember a:hover
+{
+    text-decoration:underline;
+}
+
+.wraper .btn
+{   
+margin: 10px; 
+width:150px;
+height: 40px;
+border-radius:100px;
+background: rgb(205, 219, 255);
+color:rgb(92, 92, 92);
+border:none;
+margin-top: 20px;
+font-size: 14px;
+cursor: pointer;
+font-weight: 400;
+}
+
+.wraper .close-btn 
+{
+  position: absolute;
+  left: 400px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color:rgb(92, 92, 92);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover 
+{
+  background-color: #8d8d8d;
+}
+
+.regwraper
+{
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 448px;
+    height: 425px;
+    padding: 0 35px 0 35px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    color:white;
+    display: none; 
+    
+}
+.regwraper .names
+{
+   margin-left: 150px;
+   width:100%;
+   height:50px;
+   margin: 10px;
+   color:white;
+   margin-bottom: 15px;
+
+}
+.regwraper .input-box
+{
+   
+   width:100%;
+   height:50px;
+   margin: 10px;
+   color:white;
+}
+
+.regwraper .btn
+{
+    
+margin: 10px; 
+width:150px;
+height: 40px;
+border-radius:100px;
+background: rgb(205, 219, 255);
+color:rgb(92, 92, 92);
+border:none;
+margin-top: 10px;
+margin-left: 95px;
+font-size: 14px;
+font-weight: 400;
+cursor: pointer;
+
+}
+
+.regwraper .close-btn 
+{
+  position: absolute;
+  left: 400px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color:rgb(92, 92, 92);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover 
+{
+  background-color: #8d8d8d;
+}
+
+.main
+{ 
+ 
+  margin-top: 200px;
+  margin-left: 500px ;
+  font-family: "Montserrat", Thin 100 ;
+  font-size: 18px;
+
+}
+
+.main .close-btn2 
+{
+  position: absolute;
+  left: 1000px;
+  width: 50px;
+  height: 50px;
+  color:rgb(92, 92, 92);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn2:hover 
+{
+  text-decoration: underline;
+}
+
+.messageDiv
+{
+  background-color:hsl(0, 0%, 100%);
+  height: 35px;
+  width: 450px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 530px;
+  color:rgb(92, 92, 92);
+  border-radius: 50px;
+  font-size:1rem;
+  line-height: 35px;
+  animation:fadeOut 7s forwards;
+}
+.text
+{ 
+  margin-left: 75px;
+  font-size: 12px;
+  font-family: "Montserrat", serif;
+}
