@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login password</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/Forms.js"></script>
+    <script type="module" src="JS/Firebaseauth.js"></script>
+</head>
+<body>
+    
+    <div class="navigation">
+        <div class="login-btn" onclick="showFormLog()">Войти</div>
+        <div class="reg-btn" onclick="showFormReg()">Регистрация</div>
+    </div>
+
+    <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+    <div class="wraper" id="loginForm">
+        <div class="close-btn" onclick="closeForm()"><img src="IMG/закрыть.png" alt="Close"></div>
+        <form action="">
+            <div class="names">
+                <h1>Войдите или <div class="reg"><a href="#" onclick="showFormReg()">зарегистрируйтесь</a></div></h1>
+            </div>
+        
+            <div class="input-box">
+                <input type="text" id="Email" placeholder="Введите e-mail" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="Password" placeholder="Введите пароль" required>
+            </div>
+            <div class="remember">
+                <input type="radio" id="radio1" name="radio">
+                <label for="radio1">Запомнить меня</label>
+            </div>
+            <button type="submit" id="auth" class="btn">Войти</button>
+        </form>
+    </div>
+    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+    <div class="regwraper" id="regForm">
+        <div class="close-btn" onclick="closeForm()"><img src="IMG/закрыть.png" alt="Close"></div>
+        <form action="">
+            <div class="names">
+                <h1>Регистрация</h1>
+            </div>
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Введите имя" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="regMail" placeholder="Введите e-mail" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="regPassword" placeholder="Введите пароль" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="repeatRegPassword" placeholder="Повторный пароль" required>
+            </div>
+            
+                <h3 class="text">У вас уже есть аккаунт? <a href="#" onclick="showFormLog()">Войти</a></h3>
+          
+            <button type="submit" class="btn" id="addinfo">Регистрация</button>
+        </form>
+    </div>
+</body>
+</html>
